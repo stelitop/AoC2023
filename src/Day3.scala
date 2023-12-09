@@ -21,7 +21,7 @@ object Day3 {
 
     println(nums.filter(num => locations
       .exists(pos => pos._1 - 1 <= num._2 && num._2 <= pos._1 + 1 && num._3 - 1 <= pos._2 && pos._2 <= (num._3 + num._1.length)))
-      .map(num => num._1.toInt)
+      .map(_._1.toInt)
       .sum)
   }
 
